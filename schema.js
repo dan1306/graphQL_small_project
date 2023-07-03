@@ -4,7 +4,8 @@ const {
     GraphQLBoolean,
     GraphQLList,
     GraphQLSchema,
-    GraphQLObjectType
+    GraphQLObjectType,
+    
 } = require('graphql')
 
 const axios = require('axios')
@@ -24,9 +25,9 @@ const LaunchType = new GraphQLObjectType({
             type: GraphQLInt
         },
         launch_date_local: {
-            type: GraphQLInt
+            type: GraphQLString
         },
-        launch_sucess: {
+        launch_success: {
             type: GraphQLBoolean
         },
         rocket: {
